@@ -1,0 +1,620 @@
+    /* Import romantic fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    body {
+        font-family: 'Dancing Script', cursive;
+        margin: 0;
+        padding: 0;
+        background: #ffd6e0; /* Soft pink background */
+        color: white;
+        overflow-x: hidden;
+        font-size: 1.8rem; /* Increased font size for more emphasis */
+    }
+
+    /* Hero Section */
+    .hero {
+        background: url('img8.jpg') no-repeat center center/cover;
+        height: 100vh; /* Full viewport height */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Vertically center content */
+        align-items: center;
+        text-align: center;
+        color: white;
+        padding: 20px;
+        font-size: 3rem; /* Increased font size for hero section */
+        text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        background-size: cover;
+        border-bottom: 5px solid #ff1493; /* Romantic border */
+        
+        
+    }
+
+    /* Navigation Bar */
+   nav {
+    background: #ffb6c1;
+    position: fixed;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between; /* Better layout for smaller screens */
+    align-items: center;
+}
+
+
+
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 1.8rem;
+        transition: background 0.3s, transform 0.2s;
+        border-radius: 30px; /* Rounded corners */
+    }
+
+    nav ul li a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        transform: scale(1.1);
+    }
+
+    /* Sections */
+    section {
+        margin: 100px 20px;
+        padding: 40px;
+        min-height: 600px; /* Minimum height of 600px */
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Center text */
+        background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Soft romantic gradient */
+        border-top: 5px solid #ff1493;
+        position: relative;
+    }
+
+    /* Floating Hearts */
+    /* Floating Hearts */
+    #heart-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 9999; /* Ensures hearts float above everything */
+    }
+
+    /* Floating Hearts */
+    #heart-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        pointer-events: none;
+        overflow: hidden;
+        z-index: 9999; /* Ensures hearts float above everything */
+    }
+
+    .heart {
+        position: absolute;
+        bottom: 0;
+        font-size: 2.5rem;
+        color: #ff1493; /* Romantic red */
+        animation: floatHeart linear infinite;
+        opacity: 0.8;
+    }
+
+    /* Floating Hearts Animation */
+    @keyframes floatHeart {
+        0% {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+        50% {
+            transform: translateY(-50vh) scale(1.2);
+            opacity: 0.8;
+        }
+        100% {
+            transform: translateY(-100vh) scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    /* Rest of your styles remain unchanged */
+
+
+
+    /* Modal Popup */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .modal-content {
+        background-color: white;
+        margin: 15% auto;
+        padding: 20px;
+        width: 50%;
+        text-align: center;
+        font-size: 1.8rem;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .close {
+        color: #ff1493;
+        float: right;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    /* Slideshow */
+    .slideshow-container {
+        position: relative;
+        max-width: 600px;
+        margin: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+    .mySlides img {
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+
+    /* Love Meter Section (Centered) */
+    .lovemeter-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    /* Button Styling for "Start Quiz", "Next Quote", "Choose File" */
+    button {
+        background-color: #ff6b81; /* Soft pink */
+        color: white;
+        font-size: 1.6rem; /* Button font */
+        padding: 15px 30px; /* Button size */
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ff1493; /* Romantic border */
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    button:hover {
+        background-color: #ff1493; /* Darker pink */
+        transform: scale(1.1);
+    }
+
+    /* File Input Styling (Custom "Choose File" button) */
+    input[type="file"] {
+        display: none; /* Hide the default file input */
+    }
+
+    label[for="file-upload"] {
+        background-color: #ff6b81; /* Soft pink */
+        color: white;
+        font-size: 1.6rem;
+        padding: 15px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+        display: inline-block;
+        transition: all 0.3s ease;
+        border: 2px solid #ff1493;
+        margin: 20px 0;
+    }
+
+    label[for="file-upload"]:hover {
+        background-color: #ff1493; /* Darker pink */
+        transform: scale(1.1);
+    }
+
+    /* Love Meter Result */
+    #love-result {
+        margin-top: 30px;
+        font-size: 2rem;
+        color: #ff1493;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* Video Section */
+  
+    /* Romantic Heart Icons in Sections */
+    section:before {
+        content: "❤️";
+        position: absolute;
+        font-size: 4rem;
+        color: #ff1493;
+        top: -40px;
+        right: 20px;
+        animation: heartAnimation 3s infinite ease-in-out;
+    }
+
+    @keyframes heartAnimation {
+        0% {
+            transform: rotate(0deg);
+        }
+        50% {
+            transform: rotate(360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    /* Quote Section Button */
+    .quote-button {
+        background-color: #ff6b81; /* Soft pink */
+        color: white;
+        font-size: 1.6rem; /* Button font */
+        padding: 12px 25px; /* Button size */
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        border: 2px solid #ff1493; /* Romantic border */
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .quote-button:hover {
+        background-color: #ff1493; /* Darker pink */
+        transform: scale(1.1);
+    }
+    /* Sections */
+    section {
+        margin: 0; /* Remove margin for full height */
+        padding: 40px; /* Add padding around the content */
+        height: 100vh; /* Set height to 100% of the viewport */
+        display: flex;
+        flex-direction: column; /* Ensure content is stacked vertically */
+        justify-content: center; /* Vertically center content */
+        align-items: center; /* Horizontally center content */
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center; /* Center text */
+        background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Soft romantic gradient */
+        border-top: 5px solid #ff1493;
+        position: relative;
+        margin-bottom: 20px; /* Add space between sections */
+    }
+
+    /* Optional: Add some bottom margin to prevent overlap with the next section */
+    section + section {
+        margin-top: 20px; /* Space between consecutive sections */
+    }
+
+    .read-this-when-section {
+        background-color: #ffd6e0; /* Soft pink */
+        padding: 40px;
+        margin: 50px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .read-this-when-section select {
+        font-size: 1.6rem;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px 0;
+        cursor: pointer;
+        border: 2px solid #ff1493; /* Consistent pink border */
+        background-color: #fff; /* White background for the select box */
+        color: #333;
+    }
+    .read-this-when-section {
+        background-color: #ffd6e0; /* Soft pink */
+        padding: 40px;
+        margin: 50px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+    .read-this-when-section select {
+        font-size: 1.6rem;
+        padding: 10px;
+        border-radius: 5px;
+        margin: 20px 0;
+        cursor: pointer;
+        border: 2px solid #ff1493; /* Consistent pink border */
+        background-color: #fff; /* White background for the select box */
+        color: #333;
+    }
+
+    .read-this-when-section select:hover {
+        background-color: #ff1493; /* Darker pink when hovered */
+        color: white;
+    }
+
+    .read-this-when-section .scenario-display {
+        font-size: 1.8rem;
+        color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        border: 2px solid #ff1493; /* Pink border for the message box */
+        background-color: #ffe4e1; /* Soft pink background instead of white */
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Highlight the active link */
+    .nav-link.active {
+        color: #ff1493; /* Pink color for active link */
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    /* Smooth scrolling */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .progress-bar {
+        width: 100%;
+        height: 30px;
+        background-color: #ffe4e1;
+        border-radius: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .certificate {
+        width: 80%;
+        margin: 0 auto;
+        border: 2px solid #000;
+        padding: 20px;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        background-color: #fff;
+        color: #000;
+    }
+    .certificate h1 {
+        font-size: 2.5em;
+        
+    }
+    .certificate p {
+        font-size: 1.2em;
+        color: #555;
+    }
+    .signature {
+        margin-top: 50px;
+        font-style: italic;
+    }
+
+    #best{
+        font-family: 'Dancing Script', cursive;
+    }
+
+
+/* General styling for the contract section */
+.contract {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    padding: 20px;  /* Reduced padding for a more compact look */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;  /* Increased width to fill more space */
+    max-width: 700px;  /* Slightly larger max-width */
+    margin: 30px auto;  /* Adjusted margin for centering */
+    color: #333;
+    text-align: center;
+    word-wrap: break-word;
+    white-space: pre-wrap; /* Keeps line breaks */
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInUp 1s forwards;
+}
+
+/* Animations for fading in and scaling */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* General Styles for Responsive Videos */
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Laptops & Tablets */
+    body {
+        font-size: 1.6rem;
+    }
+
+    .hero {
+        font-size: 2.5rem;
+        height: 80vh;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row; /* Ensuring nav remains horizontal */
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    section {
+        height: auto;
+        padding: 30px;
+        margin: 20px;
+    }
+}
+
+@media (max-width: 768px) { /* Tablets & Smaller Screens */
+    body {
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        font-size: 2rem;
+        padding: 50px 20px;
+    }
+
+    .read-this-when-section select {
+        width: 100%;
+    }
+
+    button, .quote-button {
+        font-size: 1.4rem;
+        padding: 12px 25px;
+    }
+
+    .modal-content {
+        width: 90%;
+        font-size: 1.6rem;
+    }
+
+    .all-nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .all-nav a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 430px) { /* iPhone SE & Small Phones */
+    body {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+
+    .hero {
+        font-size: 1.8rem;
+        padding: 40px 15px;
+        height: 70vh;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    section {
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 375px) {
+    nav {
+        height: 45px;
+        padding: 8px 10px;
+    }
+}
+
+
+.video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+video {
+    width: 300px;
+    height: 400;
+    border-radius: 30px;
+    padding: 1rem;
+}
+
+.message-section video {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.play-btn:hover {
+    background-color: #ff94b0;
+}
+
+.play-btn:active {
+    background-color: #ff7a98;
+}
+
+
+footer{
+    color: #000;
+}
+
+
+
+#audio {
+    width: 100%; /* Full width */
+    height: 50px; /* Height for the audio player */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #f0f0f0; /* Light background color */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    
+}
+ #love-letter , #quotes{
+    color: #000;
+ }

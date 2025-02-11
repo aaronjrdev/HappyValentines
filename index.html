@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <!-- Floating Hearts Container -->
+    <div id="heart-container"></div>
+
+    <header class="hero" id="hero">
+        <h1>Welcome, Love Love! ❤️</h1>
+        <p >Belated Happy 54th Monthsary and Happy Valentine’s Day, love love! 🌹</p>
+    </header>
+
+    <nav class="all-nav">
+        <ul>
+            <li><a href="#hero" class="nav-link">HOME</a></li>
+           
+            <li><a href="#message" class="nav-link">Moments Together</a></li>
+           
+            <li><a href="#love-letter" class="nav-link">Love Letter</a></li>
+            
+        </ul>
+    </nav>
+
+   <section>
+    <div class="video-container" id="video">
+        
+        
+        <video src="video1.mp4" autoplay muted loop></video>
+        <video src="video2.mp4" autoplay muted loop></video>
+        <video src="video3.mp4" autoplay muted loop></video>
+        <video src="video4.mp4" autoplay muted loop></video>
+        <video src="video5.mp4" autoplay muted loop></video>
+        <h2> Forever with you. ❤️  </h2>
+    </div>
+
+   </section> 
+    
+   <section>
+    <div class="voice-message">
+        <h2 style="color: black;"> You can listen while scrolling love love</h2>
+       
+        <audio id="audio" src="./voice.ogg" controls></audio>
+        <p style="color: black;">Pasensya kana sa audio love love medyo malabo pero sana magustuhan mo , iloveyou always love love!</p> <!-- Audio controls visible -->
+    </div>
+    
+    
+
+</section>
+    
+    
+    
+
+    <section id="about" class="about-section">
+        <h2>💑 About Us</h2>
+        <p style="color: black;">hello love lovee, bilis ng panahon 2025 na. Grabe no parang kahapon lang sa COC lang tayo nag uusap , unang una gusto kong mag pasalamat sa Diyos na ako yung binigay nya para sayo. Donns sure na sure nako sayo. Maraming salamat sa pag suporta mo saken sa lahat ng bagay, mula sa pag bibisikleta ko noon at nag download kadin ng ML para magkalaro tayo. Mag kekwento sana ako ng tungkol satin kaso wala nakong maalala sa panahon nayun e hahaha, 2020-2021 puro lang naman tayo laro nun. 2022 dun na natin napag desisyonan na magkita, alam mo ba takot talaga ako nun na baka iwan moko after natin magkita pero syempre may tiwala ako sayo kaya maraming maraming salamat sa pag tanggap at pag intindi mo saken love love, 'til now iniintindi mo padin ako kaya thank you so much, huwag na huwag kang magsasawa sakinn donnang ha iloveyouu!</p>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <h2>📸 Our Moments</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="img.jpg" alt="Image 1">
+            </div>
+            <div class="mySlides fade">
+                <img src="img2.jpg" alt="Image 2">
+            </div>
+            <div class="mySlides fade">
+                <img src="img3.jpg" alt="Image 3">
+            </div>
+            <div class="mySlides fade">
+                <img src="img6.jpg" alt="Image 6">
+            </div>
+            <div class="mySlides fade">
+                <img src="img5.jpg" alt="Image 5">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="img7.jpg" alt="Image 7">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="message" class="message-section">
+        <h2>💌 Moments Together</h2>
+        <p style="color: black;">first video natin together love love!</p>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+   
+    <section id="countdown" class="countdown-section">
+        <h2>⏳ Countdown to Our Next Valentine's Day</h2>
+        <p id="countdown-timer" style="color: black;"></p>
+        <p style="color: black;">Love, you always bring joy and excitement...</p>
+    </section>
+
+    <section id="love-letter" class="love-letter-section">
+        <h2>💌 Love Letter</h2>
+        <p id="love-letter"></p>
+    </section>
+
+    <section id="quotes" class="quotes-section">
+        <h2>💖 Love Quotes</h2>
+        <div id="quote-display"></div>
+        <button id="nextQuoteButton" class="quote-button">Next Quote</button>
+    </section>
+
+    <section class="lovemeter-section">
+        <h3>💖 How Much Do I Love You? 💖</h3>
+        <button onclick="calculateLove()" class="love-button">Click to Find Out!</button>
+        <p id="love-result"></p>
+    </section>
+
+    <section id="photo-gallery" class="photo-gallery">
+        <h2>Pwede ka mag add ng pictures na gusto mo love love!</h2>
+        <input type="file" id="file-upload" accept="image/*">
+        <label for="file-upload">Choose Photo</label>
+        <div id="gallery"></div>
+    </section>
+
+    <section id="read-this-when" class="read-this-when-section">
+        <h2>📖 Read This When...</h2>
+        <p style="color: black;"> Choose a scenario to read something special! 💌</p>
+        <select id="scenario-selector">
+            <option value="choose" >Read This When...</option>
+            <option value="hate">You Hate Me</option>
+            <option value="motivated">You Are Motivated</option>
+            <option value="miss">You Miss Me</option>
+            <option value="insecure">You Feel insecure</option>
+            <option value="sleep">You Can't Sleep </option>
+            
+        </select>
+        
+        <div id="scenario-display" class="scenario-display"></div>
+    </section>
+    
+    <section id="spotify-playlist" class="spotify-playlist-section">
+        <h2>🎶 Songs That Remind You of Me💖</h2>
+        <p>I made a playlist of all the songs...</p>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/5Z26qhgulhnIrnR4Qyui7B?utm_source=generator" width="100%" height="900" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </section>
+
+    <section id="certificate" class="certificate">
+        <h1 id="best">Best Girlfriend Award</h1>
+        <p>Presented to</p>
+        <h2>Ms. Donna Annika Rebadulla</h2>
+        <p>For being the most amazing, loving, and supportive partner.</p>
+        <p>Date: 02 / 14 / 25</p>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; Nagmamahal , Aaron 💖 </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
